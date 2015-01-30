@@ -41,6 +41,8 @@ https://github.com/Anthony25/gnome-terminal-colors-solarized
 
 # Ricty
 
+## Rictyフォントの生成
+
 ```
 $ yum install fontforge
 ```
@@ -59,3 +61,9 @@ $ cp -f Ricty*.ttf ~/.fonts/
 $ fc-cache -vf
 ```
 
+## GVimへの設定
+
+~/.gvimrcに以下を追加する。
+
+set guifont=Ricty\ Discord\ 12
+set guifontwide=Ricty\ Discord\ 12
