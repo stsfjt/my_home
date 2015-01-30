@@ -25,7 +25,7 @@ $ ssh-add
 
 # Vim
 
-## NeoBundoleのインストール
+## NeoBundleのインストール
 
 ```
 $ mkdir -p ~/.vim/bundle
