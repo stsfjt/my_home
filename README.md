@@ -31,3 +31,10 @@ $ ssh-add
 $ mkdir -p ~/.vim/bundle
 $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 ```
+
+# Solarized
+
+## Gnome Terminal
+
+下記よりダウンロードして、set_dark.shをじっこうする。
+https://github.com/Anthony25/gnome-terminal-colors-solarized
