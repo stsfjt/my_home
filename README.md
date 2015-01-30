@@ -1,16 +1,33 @@
-my_home
+ホーム環境構築
 =======
 
 Configuration files in my home directory.
 
-# セットアップ
+# GitHub
 
-## configに登録
+## SSHでの接続準備
+
+接続用の秘密鍵を設定する。
 
 ```
 $ cat >> ~/.ssh/config
 Host github.com
   User git
   Hostname github.com
-  IdentityFile ~/.ssh/git_id_rsa
+  IdentityFile ~/.ssh/github_rsa
+```
+
+秘密鍵を認証エージェントに追加する。
+
+```
+$ ssh-add
+```
+
+# Vim
+
+## NeoBundoleのインストール
+
+```
+$ mkdir -p ~/.vim/bundle
+$ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 ```
