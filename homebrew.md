@@ -1,5 +1,7 @@
 # Homebrew
 
+[Homebrew](https://brew.sh/index_ja.html)でアプリケーションの管理を行います。
+
 ## インストール
 
 下記でインストールを行います。
@@ -73,9 +75,22 @@ $ brew cask cleanup
 ==> This operation has freed approximately 5.4MB of disk space.
 ```
 
-## Caskでインストールしたアプリケーション
+## インストールしたアプリケーション等
 
-* iterm2
-* macvim
-* firefox
+[homebrew/homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)のBrewfileとしてまとめます。
+
+```
+tap caskroom/cask
+tap caskroom/versions
+cask 'iterm2'
+cask 'macvim'
+cask 'firefox'
+cask 'google-chrome'
+cask 'google-japanese-ime'
+tap tholu/tap
+brew tholu/tap/subversion18, args: [with-unicode-path]
+cask 'virtualbox'
+cask 'alfred'
+brew 'jq'
+```
 

@@ -1,14 +1,36 @@
 利用しているアプリケーション一覧
 ====
 
-* Homebrew
+* 開発ツール
+    * [Xcode]
 
-[https://brew.sh/index_ja.html]
-[./homebrew.md]
+* アプリケーション管理
+    * [Homebrew](./homebrew.md)
 
-* iTerm2
+* ターミナル
+    * [iTerm2]
 
-* MacVim
+* エディタ
+    * [MacVim]
 
-* Firefox
+* ブラウザ
+    * [Firefox]
+    * [Google Chrome]
+
+* バージョン管理システム
+    * [Git]
+    * [Subversion]
+https://github.com/tholu/homebrew-tap
+    * [Mercurial]
+
+* 仮想化
+    * [VirtualBox]
+
+* ユーティリティ
+
+    * [Google 日本語入力]
+
+Caskでインストールし、再起動が必要です。
+
+    * [Alfred]
 
