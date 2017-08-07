@@ -92,5 +92,6 @@ brew tholu/tap/subversion18, args: [with-unicode-path]
 cask 'virtualbox'
 cask 'alfred'
 brew 'jq'
+cask 'skype'
 ```
 
