@@ -93,5 +93,7 @@ cask 'virtualbox'
 cask 'alfred'
 brew 'jq'
 cask 'skype'
+brew 'nodebrew'
+brew 'python3'
 ```
 

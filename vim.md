@@ -5,6 +5,10 @@ Linux上では、Vim8を使っています。
 
 ## インストール
 
+### Mac
+
+NeovimにするかVim8にするか決めきれていないため両方インストールしておきます。
+
 Mac上でのNeovimのインストールは、Homebrewで終わりです。
 
 ``` bash
@@ -12,6 +16,24 @@ $ brew install neovim/neovim/neovim
 ```
 
 MacVim-Kaoriyaは、Homebrew Caskで見つからないので、dmgをダウンロードしてインストールしました。
+
+### Linux
+
+Linux上では、最新版のVim8をビルドしてインストールします。
+以下は、CentOS6.9上で実行しました。
+
+``` bash
+# cd /usr/local/src/
+# git clone https://github.com/vim/vim.git
+# yum -y install ncurses-devel
+// 必要ならインストール
+# yum -y install libXt-devel libX11-devel atk-devel gtk2-devel
+// 必要ならインストール
+# yum -y install lua-devel
+# ./configure --enable-multibyte --with-features=huge --enable-cscope --enable-gui=gtk2 --disable-selinux --prefix=/usr/local --enable-xim --enable-fontset --enable-gpm --enable-rubyinterp --with-python-config-dir=/usr/lib/python2.6/config --enable-luainterp=yes --with-lua-prefix=/usr
+# make
+# make install
+```
 
 ## ターミナルからの起動
 
@@ -24,6 +46,18 @@ alias ctag='/Applications/MacVim.app/Contents/MacOS/ctags "$@"'
 ```
 
 ## 設定
+
+### Neovim
+
+基本的には、Vimと同じ設定で動作するようにします。
+プラグインは、neovimでしか動作しないものは、has('nvim')で判定します。
+
+``` bash
+$ mkdir -p ~/.config/nvim
+$ mkdir -p ~/.cache/dein
+$ cd ~/.config/nvim
+$ ln -s ~/.vimrc init.vim
+```
 
 ### プラグインマネージャー
 
@@ -43,17 +77,14 @@ Install to "~/.cache/dein//repos/github.com/Shougo/dein.vim"...
 
 ### カラースキーマ
 
-[Solarized](https://github.com/altercation/vim-colors-solarized)を利用します。
+[Solarized 8](https://github.com/lifepillar/vim-solarized8)を利用します。
 
 .vimrcに適切な場所に下記を追加します。
 ```
-call dein#add('altercation/vim-colors-solarized')
+call dein#add('lifepillar/vim-solarized8')
 
-if !has('gui_running')
-    let g:solarized_termcolors=256
-endif
 set background=dark
-colorscheme solarized
+colorscheme solarized8_dark
 ```
 
 ### ステータスライン
