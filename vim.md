@@ -101,3 +101,10 @@ endif
 "let g:lightline = { 'colorscheme': 'solarized' }
 ```
 
+### その他
+
+利用しているプラグインの一覧です。
+
+- [tpope/vim-surround](https://github.com/tpope/vim-surround)
+    [], (), {} といった括弧や、'' や "" などの引用符、HTMLタグなど、テキストを囲うプラグインです。
+

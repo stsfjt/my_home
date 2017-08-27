@@ -1,7 +1,7 @@
 ホーム環境構築
 =======
 
-Configuration files in my home directory.
+自分用の覚書です。
 
 # GitHub
 
@@ -23,14 +23,9 @@ Host github.com
 $ ssh-add
 ```
 
-# Vim
+# アプリケーション
 
-## NeoBundleのインストール
-
-```
-$ mkdir -p ~/.vim/bundle
-$ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-```
+[利用しているアプリケーションやその設定方法](./Apprication.md)についてまとめる。
 
 # Solarized
 

@@ -20,7 +20,7 @@ Homebrew/homebrew-core (git revision fad4; last commit 2017-08-02)
 
 ## Cask
 
-Caskを利用してアプリケーションを管理できるようにします。
+[Cask](https://caskroom.github.io/)を利用してアプリケーションを管理できるようにします。
 最初の以下のコマンドでインストールされます。
 
 ``` bash
@@ -95,5 +95,22 @@ brew 'jq'
 cask 'skype'
 brew 'nodebrew'
 brew 'python3'
+brew 'ghostscript'
+cask 'mactex'
+cask 'the-unarchiver'
+cask 'microsoft-remote-desktop-beta'
+brew 'exiftool'
+brew 'fzf'
+brew 'peco'
+brew 'ripgrep'
+brew 'w3m'
+brew 'homebrew/php/php-cs-fixer'
+cask 'keeweb'
+cask 'xquartz'
+cask 'inkscape'
+cask 'osxfuse'
+brew 'ext4fuse'
 ```
+
+
 
