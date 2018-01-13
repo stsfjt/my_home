@@ -88,7 +88,7 @@ cask 'firefox'
 cask 'google-chrome'
 cask 'google-japanese-ime'
 tap tholu/tap
-brew tholu/tap/subversion18, args: [with-unicode-path]
+brew tholu/tap/subversion18, args: ['with-unicode-path']
 cask 'virtualbox'
 cask 'alfred'
 brew 'jq'
@@ -110,6 +110,30 @@ cask 'xquartz'
 cask 'inkscape'
 cask 'osxfuse'
 brew 'ext4fuse'
+brew 'p7zip'
+brew 'httpie'
+brew 'sshrc'
+brew 'sshfs'
+cask 'adobe-acrobat-reader'
+cask 'vlc'
+brew 'ccat'
+brew 'source-highlight'
+brew 'ffmpeg', args: ['with-x265']
+cask 'sequel-pro'
+cask 'keka'
+cask 'appcleaner'
+cask 'teamviewer'
+brew 'homebrew/php/composer'
+cask 'palemoon' お試し
+brew 'coreutils'
+brew 'multitail'
+cask 'maczip4win'
+cask 'limechat'
+cask 'sparkleshare'
+cask 'fman'
+cask 'docker'
+brew tap delphinus/macvim-kaoriya
+brew cask install macvim-kaoriya
 ```
 
 

@@ -47,11 +47,20 @@ bashを使いやすくするためのツールを追加します。
 
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 
-	高速にgrepを行うツールです。
+	高速に曖昧検索を行うツールです。
 
 	インストールは、下記のとおりです。
 	``` bash
 	$ brew install ripgrep
 	```
 
+- [the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
+
+    高速に曖昧検索を行うツールです。
+	ファイル名を検索する場合は、findより早いので使っています。
+
+	インストールは、下記のとおりです。
+	``` bash
+	$ brew install the_silver_searcher
+	```
 
