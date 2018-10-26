@@ -83,7 +83,6 @@ $ brew cask cleanup
 tap caskroom/cask
 tap caskroom/versions
 cask 'iterm2'
-cask 'macvim'
 cask 'firefox'
 cask 'google-chrome'
 cask 'google-japanese-ime'
@@ -133,7 +132,17 @@ cask 'sparkleshare'
 cask 'fman'
 cask 'docker'
 brew tap delphinus/macvim-kaoriya
-brew cask install macvim-kaoriya
+cask 'macvim-kaoriya'
+brew 'vim', args: ['with-python3']
+brew 'global', args: ['with-ctags','with-pygments']
+cask 'psequel'
+brew 'bash-completion'
+cask 'caskroom/fonts/font-hack-nerd-font'
+cask 'font-cica'
+cask 'skim'
+brew 'htop'
+brew 'nmap'
+cask 'amethyst'
 ```
 
 
